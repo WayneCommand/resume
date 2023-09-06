@@ -8,9 +8,7 @@ export default function Home() {
 		<div>
 			<Title />
 			<Links />
-
 			<Skill />
-
 			<Experience />
 		</div>
 

@@ -6,19 +6,19 @@ export const profileConfig = {
 	"links": [
 		[
 			{
-				"icon": "phone",
+				"icon": "BsPhoneVibrateFill",
 				"title": "电话",
 				"text": 6481025
 			},
 			{
-				"icon": "wechat",
+				"icon": "BsWechat",
 				"title": "微信",
 				"text": "wxid_starrail"
 			}
 		],
 		[
 			{
-				"icon": "email",
+				"icon": "BsFillEnvelopeFill",
 				"title": "邮件",
 				"text": "waynecommand.com"
 			}
