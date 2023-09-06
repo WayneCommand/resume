@@ -23,6 +23,9 @@ dependencies:
   '@nextui-org/navbar':
     specifier: 2.0.16
     version: 2.0.16(@types/react@18.2.21)(framer-motion@10.16.2)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.3)
+  '@nextui-org/progress':
+    specifier: ^2.0.18
+    version: 2.0.18(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.3)
   '@nextui-org/snippet':
     specifier: 2.0.19
     version: 2.0.19(framer-motion@10.16.2)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.3)
@@ -522,6 +525,26 @@ packages:
       - tailwindcss
     dev: false
 
+  /@nextui-org/progress@2.0.18(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.3):
+    resolution: {integrity: sha512-zAfQKKfcs1MJ2Wti7VvTgXKZYa6/fuZoKuCbG6WMiL5LiacQjavZzHxhNZz5ps4I5ihbhvpXg7HuiYdENC+E8A==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/react-utils': 2.0.7(react@18.2.0)
+      '@nextui-org/shared-utils': 2.0.2(react@18.2.0)
+      '@nextui-org/system': 2.0.7(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.3)
+      '@nextui-org/theme': 2.1.6(tailwindcss@3.3.3)
+      '@nextui-org/use-is-mounted': 2.0.2(react-dom@18.2.0)(react@18.2.0)
+      '@react-aria/i18n': 3.8.1(react@18.2.0)
+      '@react-aria/progress': 3.4.4(react@18.2.0)
+      '@react-aria/utils': 3.19.0(react@18.2.0)
+      '@react-types/progress': 3.4.2(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
   /@nextui-org/react-rsc-utils@2.0.7:
     resolution: {integrity: sha512-BfbrN0/kh7qHoZYAh0bkV1w04Wngm+7K+soTZR4C3eSIxMMeu179CDELW+VCIBwdat4iSQaaJkHZVm8brtueNA==}
     dev: false
@@ -640,12 +663,38 @@ packages:
       - tailwindcss
     dev: false
 
+  /@nextui-org/system-rsc@2.0.4(react@18.2.0)(tailwindcss@3.3.3):
+    resolution: {integrity: sha512-qC1AgyFsYizEXTXgrAYGe393FzwkcPmr96F35fKcXtqu9KcIXf4Eac0EpXqu3niYMtfQu1uN7WYGXSQABmoDDw==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      clsx: 1.2.1
+      react: 18.2.0
+      tailwind-variants: 0.1.14(tailwindcss@3.3.3)
+    transitivePeerDependencies:
+      - tailwindcss
+    dev: false
+
   /@nextui-org/system@2.0.5(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.3):
     resolution: {integrity: sha512-ke02e60ctxnXsxe77TRN6pWVY89aCCi0AXwyQIbgT9lfiVgUGWJa+f6am46ItCzeSkvIQ7j3XJBz717zu+GSRg==}
     peerDependencies:
       react: '>=18'
     dependencies:
       '@nextui-org/system-rsc': 2.0.3(react@18.2.0)(tailwindcss@3.3.3)
+      '@react-aria/i18n': 3.8.1(react@18.2.0)
+      '@react-aria/overlays': 3.16.0(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+      - tailwindcss
+    dev: false
+
+  /@nextui-org/system@2.0.7(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.3):
+    resolution: {integrity: sha512-aClgN+hvY5BcqYOrZjIQN4cfYV2esVsMPLPkvmzoGul87s+Lk3bBE0tZYQXgkqYRlpxk0sHZNk/dW6skvZQegA==}
+    peerDependencies:
+      react: '>=18'
+    dependencies:
+      '@nextui-org/system-rsc': 2.0.4(react@18.2.0)(tailwindcss@3.3.3)
       '@react-aria/i18n': 3.8.1(react@18.2.0)
       '@react-aria/overlays': 3.16.0(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
@@ -676,6 +725,31 @@ packages:
       lodash.mapkeys: 4.6.0
       lodash.omit: 4.5.0
       tailwind-variants: 0.1.13(tailwindcss@3.3.3)
+      tailwindcss: 3.3.3
+    dev: false
+
+  /@nextui-org/theme@2.1.6(tailwindcss@3.3.3):
+    resolution: {integrity: sha512-8QmH7SpZsSjbjaxkgZ8N6uUjQKOZjT0Vqi2VnPUejLoHGKgfgO+N48WsfXL7zBTYbfGmeOwpNL/68mztxGkwYQ==}
+    peerDependencies:
+      tailwindcss: '*'
+    dependencies:
+      '@types/color': 3.0.3
+      '@types/flat': 5.0.2
+      '@types/lodash.foreach': 4.5.7
+      '@types/lodash.get': 4.4.7
+      '@types/lodash.kebabcase': 4.1.7
+      '@types/lodash.mapkeys': 4.6.7
+      '@types/lodash.omit': 4.5.7
+      color: 4.2.3
+      color2k: 2.0.2
+      deepmerge: 4.3.1
+      flat: 5.0.2
+      lodash.foreach: 4.5.0
+      lodash.get: 4.4.2
+      lodash.kebabcase: 4.1.1
+      lodash.mapkeys: 4.6.0
+      lodash.omit: 4.5.0
+      tailwind-variants: 0.1.14(tailwindcss@3.3.3)
       tailwindcss: 3.3.3
     dev: false
 
@@ -750,6 +824,16 @@ packages:
       react: '>=18'
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /@nextui-org/use-is-mounted@2.0.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-PjwpTkl5f+bTVU9l5GzgZDHd+uOwCZ3bhuYzbbamw1J5kBWruVnKUqZihS3zrLtJxKNxk/f7RT0UWK2a4wGpDw==}
+    peerDependencies:
+      react: '>=18'
+      react-dom: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /@nextui-org/use-scroll-position@2.0.2(react@18.2.0):
@@ -882,6 +966,20 @@ packages:
       '@swc/helpers': 0.5.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@react-aria/progress@3.4.4(react@18.2.0):
+    resolution: {integrity: sha512-k4EBtYcmqw3j/JYJtn+xKPM8/P1uPcFGSBqvwmVdwDknuT/hR1os3wIKm712N/Ubde8hTeeLcaa38HYezSF8BA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-aria/i18n': 3.8.1(react@18.2.0)
+      '@react-aria/label': 3.6.1(react@18.2.0)
+      '@react-aria/utils': 3.19.0(react@18.2.0)
+      '@react-types/progress': 3.4.2(react@18.2.0)
+      '@react-types/shared': 3.19.0(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
     dev: false
 
   /@react-aria/ssr@3.7.1(react@18.2.0):
@@ -1070,6 +1168,15 @@ packages:
 
   /@react-types/overlays@3.8.1(react@18.2.0):
     resolution: {integrity: sha512-aDI/K3E2XACkey8SCBmAerLhYSUFa8g8tML4SoQbfEJPRj+jJztbHbg9F7b3HKDUk4ZOjcUdQRfz1nFHORdbtQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-types/shared': 3.19.0(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@react-types/progress@3.4.2(react@18.2.0):
+    resolution: {integrity: sha512-UvnBt1OtjgQgOM3556KpuAXSdvSIVGSeD4+otTfkl05ieTcy6Lx7ef3TFI2KfQP45a9JeRBstTNpThBmuRe03A==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
     dependencies:
@@ -3442,6 +3549,16 @@ packages:
 
   /tailwind-variants@0.1.13(tailwindcss@3.3.3):
     resolution: {integrity: sha512-G2M7M74hjq0nAo6QdEfUJgF+0t9DecFUw91GC1P9YTnwMcfB3uChT5U5e2DuNU42xoOz15lzo7r0mPdMzZkylg==}
+    engines: {node: '>=16.x', pnpm: '>=7.x'}
+    peerDependencies:
+      tailwindcss: '*'
+    dependencies:
+      tailwind-merge: 1.14.0
+      tailwindcss: 3.3.3
+    dev: false
+
+  /tailwind-variants@0.1.14(tailwindcss@3.3.3):
+    resolution: {integrity: sha512-qfOkSGP+cSolTTkJboldGmiM+w5uE77pazCRkwixEBsuaml9CmhN0E8qgH7QnZNmOTVSsgRK1tn/MsKOvOKVWA==}
     engines: {node: '>=16.x', pnpm: '>=7.x'}
     peerDependencies:
       tailwindcss: '*'
