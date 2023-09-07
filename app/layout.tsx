@@ -53,6 +53,8 @@ export default function RootLayout({
 								size="sm"
 							>
 								<span className="text-default-600">Build by</span>
+								<p className="text-primary">React</p>
+								<span className="text-default-600"> with </span>
 								<p className="text-primary">Next.js</p>
 								<span className="text-default-600">| Have a great day.</span>
 							</Link>
