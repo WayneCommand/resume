@@ -4,7 +4,7 @@ import { profileConfig } from "@/config/profile";
 
 function ExperienceBlock(experience: any) {
     return (
-        <div>
+        <div key={experience.title}>
             <div className="flex gap-20 pt-6 items-end text-center justify-center">
                 <h2 className="text-xl font-semibold">{experience.title}</h2>
                 <p className="text-md">{experience.subtitle}</p>
@@ -20,7 +20,7 @@ function ExperienceBlock(experience: any) {
 
 function ExperienceItem(proj: any) {
     return (
-        <div>
+        <div key={proj.name}>
             <div><p className="mx-20 pt-4 text-x font-medium">{proj.name}</p></div>
             <div className="text-md mx-5 pl-3 pt-0">
                 <span className="font-medium">介绍: </span><span className="ml-2 indent-4">{proj.text}</span><br/>

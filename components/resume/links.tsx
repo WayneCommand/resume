@@ -1,20 +1,23 @@
+'use client'
+
 import {Button, ButtonGroup} from "@nextui-org/button";
 import {FaConnectdevelop} from 'react-icons/fa';
-import {BsPhoneVibrateFill, BsWechat, BsFillEnvelopeFill} from 'react-icons/bs'
+import {BsPhoneVibrateFill, BsWechat, BsFillEnvelopeFill, BsFillMortarboardFill} from 'react-icons/bs'
 import { profileConfig } from "@/config/profile";
 
 const ICONS = {
-    "FaConnectdevelop": <FaConnectdevelop size="md"/>,
-    "BsPhoneVibrateFill": <BsPhoneVibrateFill size="md" />,
-    "BsWechat": <BsWechat size="md" />,
-    "BsFillEnvelopeFill": <BsFillEnvelopeFill size="md" />
+    "FaConnectdevelop": <FaConnectdevelop size="1.5rem"/>,
+    "BsPhoneVibrateFill": <BsPhoneVibrateFill size="1.5rem" />,
+    "BsWechat": <BsWechat size="1.5rem" />,
+    "BsFillEnvelopeFill": <BsFillEnvelopeFill size="1.5rem" />,
+    "BsFillMortarboardFill": <BsFillMortarboardFill size="1.5rem" />
 
 }
 
 function Link(title: string, text: string, icon: string) {
     return (
         // @ts-ignore
-        <Button color="default" variant="light" startContent={ICONS[icon]}>
+        <Button key={text} color="default" variant="light" startContent={ICONS[icon]}>
             {title + ": " + text}
         </Button>
     )
@@ -22,7 +25,7 @@ function Link(title: string, text: string, icon: string) {
 
 function LinkLine(link: any) {
     return (
-        <div className="inline-block max-w-screen-md text-center justify-center">
+        <div key={link} className="inline-block max-w-screen-md text-center justify-center">
             {link.map((item: { title: string; text: string; icon: string }) => Link(item.title, item.text, item.icon))}
         </div>
     );
