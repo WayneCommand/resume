@@ -2,7 +2,7 @@
 
 import {Button, ButtonGroup} from "@nextui-org/button";
 import {FaConnectdevelop} from 'react-icons/fa';
-import {BsPhoneVibrateFill, BsWechat, BsFillEnvelopeFill, BsFillMortarboardFill} from 'react-icons/bs'
+import {BsPhoneVibrateFill, BsWechat, BsFillEnvelopeFill, BsFillMortarboardFill, BsGithub} from 'react-icons/bs'
 import { profileConfig } from "@/config/profile";
 
 const ICONS = {
@@ -10,7 +10,8 @@ const ICONS = {
     "BsPhoneVibrateFill": <BsPhoneVibrateFill size="1.5rem" />,
     "BsWechat": <BsWechat size="1.5rem" />,
     "BsFillEnvelopeFill": <BsFillEnvelopeFill size="1.5rem" />,
-    "BsFillMortarboardFill": <BsFillMortarboardFill size="1.5rem" />
+    "BsFillMortarboardFill": <BsFillMortarboardFill size="1.5rem" />,
+    "BsGithub": <BsGithub size="1.5rem" />
 
 }
 
@@ -18,7 +19,7 @@ function Link(title: string, text: string, icon: string) {
     return (
         // @ts-ignore
         <Button key={text} color="default" variant="light" startContent={ICONS[icon]}>
-            {title + ": " + text}
+            <strong>{title}: </strong> {text}
         </Button>
     )
 }

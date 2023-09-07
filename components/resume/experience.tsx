@@ -11,7 +11,7 @@ function ExperienceBlock(experience: any) {
             </div>
             <hr/>
             <div>
-                <p className="mx-5 mt-1 text-md indent-unit-xl antialiased">{experience.description}</p>
+                <p className="mx-5 mt-1 text-md indent-unit-xl antialiased tracking-wide leading-relaxed">{experience.description}</p>
             </div>
             { experience.projects?.map( (proj: any) => ExperienceItem(proj)) }
         </div>
@@ -21,10 +21,14 @@ function ExperienceBlock(experience: any) {
 function ExperienceItem(proj: any) {
     return (
         <div key={proj.name}>
-            <div><p className="mx-20 pt-4 text-x font-medium">{proj.name}</p></div>
+            <div className="w-max">
+                <p className="mx-20 pt-4 text-x font-medium">{proj.name}</p>
+                <hr className="w-[50%] mx-auto" style={{"height": "2px","backgroundColor": "rgba(0, 0, 0,.15)","border": "none"}}/>
+            </div>
+
             <div className="text-md mx-5 pl-3 pt-0">
-                <span className="font-medium">介绍: </span><span className="ml-2 indent-4">{proj.text}</span><br/>
-                <span className="font-medium">关键技术点: </span><span className="ml-2 indent-4">{proj.point}</span>
+                <span className="font-medium">介绍: </span><span className="ml-2 indent-4 tracking-wide leading-relaxed">{proj.text}</span><br/>
+                <span className="font-medium">关键技术点: </span><span className="ml-2 indent-4 tracking-wide leading-relaxed">{proj.point}</span>
             </div>
         </div>
 
